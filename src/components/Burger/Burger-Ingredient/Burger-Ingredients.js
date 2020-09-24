@@ -5,34 +5,34 @@ import Proptypes from 'prop-types';
 export default class BurgerIngredient extends Component {
 
     render() {
-        let ingradient = null;
+        let ingredient = null;
 
         switch (this.props.type) {
             case ('burger-bottom'):
-                ingradient = <div className={classes.BreadBottom}></div>
+                ingredient = <div className={classes.BreadBottom}></div>
                 break;
             case ('burger-top'):
-                ingradient = <div className={classes.BreadTop}>
+                ingredient = <div className={classes.BreadTop}>
                     <div className={classes.Seeds1}></div>
                     <div className={classes.Seeds2}></div>
                 </div>
                 break;
             case ('meat'):
-                ingradient = <div className={classes.Meat}></div>
+                ingredient = <div className={classes.Meat}></div>
                 break;
             case ('cheese'):
-                ingradient = <div className={classes.Cheese}></div>
+                ingredient = <div className={classes.Cheese}></div>
                 break;
             case ('salad'):
-                ingradient = <div className={classes.Salad}></div>
+                ingredient = <div className={classes.Salad}></div>
                 break;
             case ('bacon'):
-                ingradient = <div className={classes.Bacon}></div>
+                ingredient = <div className={classes.Bacon}></div>
                 break;
             default:
-                ingradient = null;
+                ingredient = null;
         }
-        return ingradient;
+        return ingredient;
     }
 
 }
